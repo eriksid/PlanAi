@@ -15,7 +15,7 @@ Etapa 1 (SslBump1): A conexão inicial é estabelecida via IP (CONNECT IP:443). 
 
 SNI: Embora existisse uma regra para o domínio, ela nunca era alcançada porque a conexão era derrubada na Etapa 1.
 
-### Solução :
+### Solução:
  Alteração realizada no arquivo de configuração /usr/local/squid/etc/proxy/hotspot/rules_acl.cfg no servidor 172.30.15.200.
 
 A correção consistiu em duas partes:
@@ -24,6 +24,13 @@ A correção consistiu em duas partes:
 * Validação SNI: Adição de regra ssl::server_name para validar o domínio Google extraído do handshake TLS.
 
 
-## Opção 2 - Liberação via Iptables
+## Opção 2 - Liberação via Iptables 
 
-O bloqueio ocorre devido a regra 
+### Objetivo
+
+Permitir que usuários acessem o fluxo de login do Google no Hotspot liberando o tráfego necessário via iptables.
+
+#### Solução:
+
+
+
