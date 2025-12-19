@@ -26,3 +26,16 @@ www.accounts.google.com
 www.google.com
 www.googleadservices.com
 www.play.google.com
+
+
+
+
+AmazonAWS
+DoH_DoT
+Edgecast
+Facebook
+Google
+GoogleCloud
+GoogleServices
+MGCP
+OCSP
